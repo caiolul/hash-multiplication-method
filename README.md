@@ -2,8 +2,8 @@
 
 /*  
     Prova LabEstrutura de dados
-prof: Fabio Jr
-aluno: Caio César
+*prof: Fabio Jr*
+*aluno: Caio César*
 
 implementação : Encadeaento separado com metodo de multiplicação
 
@@ -14,6 +14,6 @@ implementação : Encadeaento separado com metodo de multiplicação
             | | | | | | | |  ____| | | | | |
             |_| |_| |_| |_| |______| |_| |_|
 
- infelizmente tanto o | quanto o _ o compilador fala qua são caracteres epeciais    
+   
 
 */
