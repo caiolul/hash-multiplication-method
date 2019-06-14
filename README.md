@@ -2,9 +2,10 @@
 
 /*  
     Prova LabEstrutura de dados
-*prof: Fabio Jr*
+    
+*Prof: Fabio Jr*
 
-*aluno: Caio César*
+*Aluno: Caio César*
 
 implementação : Encadeaento separado com metodo de multiplicação
 
