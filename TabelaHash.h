@@ -11,6 +11,6 @@ typedef struct tabela Hashing;
 Hashing* criarTabela(int tamanho);
 void liberaTabela(Hashing* ha);
 int inserirTabela(Hashing* ha, struct num n1);
-int buscarTabela(Hashing* ha, int mat, struct num* n1);
+int buscarTabela(Hashing* ha, int numero, struct num* n1);
 int funcMultiHash(int chave, int tamanho);
 

@@ -68,16 +68,24 @@ int inserirTabela(Hashing* ha, struct num n1){
 }
 
 
-int buscarTabela(Hashing* ha, int mat, struct num* n1){
+int buscarTabela(Hashing* ha, int numero, struct num* n1){
     if(ha == NULL)
         return 0;
 
-    int pos = funcMultiHash(mat,ha->tamanho);
+    int pos = funcMultiHash(numero,ha->tamanho);
     if(ha->itens[pos] == NULL)
         return 0;
-    else if (ha->itens[pos] != NULL)// caso aja mais de um elemento 
-        *n1 = *(ha->itens[pos]->prox);
-    else
-        *n1 = *(ha->itens[pos]);
-    return 1;
+    else if (ha->itens[pos] != NULL && ha->itens[pos]->numero != numero){// caso aja mais de um elemento 
+        
+        if(ha->itens[pos]->prox->numero != numero)
+            return 0;
+        else
+            return 1;
+    }
+    else{
+        if(ha->itens[pos]->numero != numero)
+            return 0;
+        else
+            return 1;
+    }
 }
